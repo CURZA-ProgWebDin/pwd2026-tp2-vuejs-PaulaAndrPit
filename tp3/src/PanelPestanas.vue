@@ -17,7 +17,7 @@
 <template>
   <div class="panel">
 
-    <!-- Botones de pestañas (compartidos por ambas versiones) -->
+
     <div class="panel__tabs">
       <button
         v-for="tab in tabs"
@@ -32,7 +32,7 @@
 
     <div class="panel__grid">
 
-      <!-- Versión SIN KeepAlive -->
+
       <div class="panel__seccion">
         <div class="panel__seccion-titulo">
           <span class="badge badge--sin">Sin KeepAlive</span>
@@ -41,7 +41,7 @@
         <component :is="tabActiva" />
       </div>
 
-      <!-- Versión CON KeepAlive -->
+
       <div class="panel__seccion">
         <div class="panel__seccion-titulo">
           <span class="badge badge--con">Con KeepAlive</span>
@@ -68,7 +68,7 @@ const tabs = [
   { key: 'perifericos', label: 'Periféricos', componente: TabPerifericos },
 ]
 
-// shallowRef es preferible para almacenar componentes (evita hacer el objeto reactivo en profundidad)
+
 const tabActiva = shallowRef(TabTodos)
 </script>
 

@@ -100,7 +100,7 @@ import PanelPestanas from './PanelPestanas.vue'
 </script>
 
 <style>
-/* ── Variables globales ── */
+
 :root {
   --bg: #d2e4f4;
   --card-bg: #ffffff;
